@@ -9,6 +9,7 @@
      DOMAIN_NAME: "vigi-devops.fun"
      instances:
        - mongodb
+       - mysql
 
   tasks:
     - name: create ec2 instance
@@ -34,5 +35,16 @@
     - name: print the private_ip
       ansible.builtin.debug:
          msg: "{{ item.instances[0].private_ip_address }}"
-      loop: "{{ ec2_output.results }}"    
+      loop: "{{ ec2_output.results }}" 
+
+    - name: create route53 record
+      amazon.aws.route53:
+        state: present
+        zone: "{{ DOMAIN_NAME }}"
+        record: "{{ item.item }}.{{ DOMAIN_NAME }}"   
+        type: A  
+        ttl: 1
+        value: "{{ item.instance[0].private_ip_address }}"
+        overwrite: true
+      loop: "{{ ec2_output.results }}"  
 
