@@ -1,7 +1,6 @@
 - name: creating ec2 & r53 using playbook
   hosts: local
   connection: local
-  gather_facts: no
 
   vars:
      ami_id: "ami-09c813fb71547fc4f"
