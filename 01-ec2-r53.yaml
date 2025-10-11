@@ -4,8 +4,8 @@
   gather_facts: no
 
   vars:
-     ami_id: ami-09c813fb71547fc4
-     sg_id: sg-01a477711f7deba2
+     ami_id: ami-09c813fb71547fc4f
+     sg_id: sg-01a477711f7deba28
      zone_id: Z04092822ZCUHU7SWZ18H
      DOMAIN_NAME: "vigi-devops.fun"
      instances:
