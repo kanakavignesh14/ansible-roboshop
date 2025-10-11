@@ -9,7 +9,8 @@
      DOMAIN_NAME: "vigi-devops.fun"
      instances:
        - mongodb
-       - mysql
+       - redis
+       - rabbitmq
       
 
   tasks:
