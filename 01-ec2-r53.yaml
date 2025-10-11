@@ -1,5 +1,5 @@
 - name : creating ec2 & r53 using playbook
-  hosts:local
+  hosts: local
   connection: local
   become: yes
   vars:
