@@ -3,8 +3,8 @@
   connection: local
 
   vars:
-     ami_id: "ami-09c813fb71547fc4f"
-     sg_id: "sg-01a477711f7deba28"
+     ami_id: ami-09c813fb71547fc4f
+     sg_id: sg-01a477711f7deba28
      zone_id: "Z04092822ZCUHU7SWZ18H"
      DOMAIN_NAME: "vigi-devops.fun"
      instances:
@@ -17,8 +17,6 @@
          instance_type: t3.micro
          security_group: "{{ sg_id }}"
          image_id: "{{ ami_id }}"
-         region: ap-south-1
-         key_name: my-key
          tags:
            Name: "{{ item }}"
       loop: "{{ instances }}"
