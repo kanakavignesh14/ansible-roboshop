@@ -18,11 +18,11 @@
           regexp: '127.0.0.1'
           replace: '0.0.0.0' 
 
-    - name: disable protected mode
+    - name: disable protected mode # to protect unauthorised access
       ansible.builtin.lineinfile:
           path: /etc/redis/redis.conf
           regexp: 'protected-mode'
-          line: 'protected mode no'       
+          line: 'protected-mode no'       
 
     - name: start and enable service
       ansible.builtin.service:
