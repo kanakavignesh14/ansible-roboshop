@@ -8,9 +8,7 @@
      zone_id: "Z04092822ZCUHU7SWZ18H"
      DOMAIN_NAME: "vigi-devops.fun"
      instances:
-       - mongodb
        - redis
-       - rabbitmq
       
 
   tasks:
