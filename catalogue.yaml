@@ -17,7 +17,7 @@
        home: /app
 
   - name: create app directory
-    ansible.builtin.files:
+    ansible.builtin.file:
        state: directory
        path: /app
 
