@@ -9,6 +9,7 @@
      DOMAIN_NAME: "vigi-devops.fun"
      instances:
        - redis
+       - mysql
       
 
   tasks:
