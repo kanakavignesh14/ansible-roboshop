@@ -10,6 +10,7 @@
      instances:
        - redis
        - mysql
+       - rabbitmq
       
 
   tasks:
