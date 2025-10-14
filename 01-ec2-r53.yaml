@@ -12,6 +12,7 @@
        - user
        - cart
        - mongodb
+       - redis
       
 
   tasks:
