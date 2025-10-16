@@ -8,10 +8,12 @@
      zone_id: "Z04092822ZCUHU7SWZ18H"
      DOMAIN_NAME: "vigi-devops.fun"
      instances:
-       - payment
-       - rabbitmq
-       - frontend
-       - "{{ componet }}"
+       - redis
+       - mongodb
+       - user
+       - shipping
+       - catalogue
+       - cart
       
 
   tasks:
