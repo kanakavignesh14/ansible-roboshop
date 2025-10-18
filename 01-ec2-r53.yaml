@@ -9,11 +9,7 @@
      DOMAIN_NAME: "vigi-devops.fun"
      instances:
        - redis
-       - mongodb
-       - user
-       - shipping
-       - catalogue
-       - cart
+      
       
 
   tasks:
